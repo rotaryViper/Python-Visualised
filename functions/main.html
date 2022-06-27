@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Visualised - Data Types</title>
+
+        <!--Website settings-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="../pythonlogo.png">
+
+        <link rel="stylesheet" href="../constant.css">
+
+        <!--Then load main css file-->
+        <link rel="preload" as="style" href="main.css">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <!--Title-->
+        <div class="title">
+            Functions
+        </div>
+
+        <!--Introduction-->
+        <div class="subtitle">
+            Introduction into reusing code
+        </div>
+        
+        <!--Credits-->
+        <a class="credit" href="https://github.com/rotaryViper" target="_blank" rel="noopener noreferrer">
+            By Rotary Viper
+        </a>
+        
+        <!--Home-->
+        <a class="home" href="../index.html">
+            <img
+                src=../home.svg
+                alt="Home"
+                decoding=async
+                loading=lazy
+                class="home"
+            >
+        </a>
+        
+        <hr>
+
+        <div class="text">
+            In python, functions are following this syntax: foo()<Br>
+            We've been using functions throughout this tutorial. Some examples are print(), input(), tuple(), range() etc.<br>
+            
+        </div>
+
+
+
+        <hr>
+
+        <!--Content-->
+        <div>
+            <div class="sect">
+                You can get the value of the entire container by simply printing it.<br>
+                In python, that is done with the <u><code>print</code></u> function.<br>
+                <code>print(container)</code>
+                <hr>
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            aList=[True,"abc",[1,2,3]]<br>
+                            aTuple=(False,534.2,50)<br>
+                            aDict={'0':'Yes','Answer':42}<br>
+                            aSet={'A','B','C'}<br>
+                            print(f'{aList} is a list.')<br>
+                            print(f'{aTuple} is a tuple.')<br>
+                            print(f'{aDict} is a dictionary.')<br>
+                            print(f'{aSet} is a set.')
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            [True,"abc",[1,2,3]] is a list.<br>
+                            (False,534.2,50) is a tuple.<br>
+                            {'0':'Yes','Answer':42} is a dictionary.<br>
+                            {'B', 'C', 'A'} is a set.
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="sect">
+                To get a single value, use indexing<br>
+                Click <a href="../indexingSlicing/main.html" target="_blank" rel="noopener noreferrer">HERE</a> to learn more about indexing.<br>
+                Try it out yourself on lists, tuples or any data type from the previous page!
+                <hr>
+                For dictionaries, just call the dictionary's keys.<br>
+                Each element will have a corrolating key.<br>
+                Each key must be a string, but the key's value can be any data type.<br>
+                <hr>
+                You can't actually call specific values from a <code>set</code>.<br>
+                What you can do however is ask if the value is <code>in</code> the set.<br>
+                This will return <code>True</code> or <code>False</code>.
+                <hr>
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            aList=[True,"abc",[1,2,3]]<br>
+                            aTuple=(False,534.2,50)<br>
+                            aDict={'0':'Yes','Answer':42}<br>
+                            aSet={'A','B','C'}<br>
+                            print(f'List index 1 is {aList[1]}.')<br>
+                            print(f'Tuple index 2 is {aTuple[2]}.')<br>
+                            aDictValue = aDict['Answer']<br>
+                            print(f'Dictionary: Answer is {aDictValue}.')<br>
+                            AaSet = 'A' in aSet<br>
+                            print(f'{AaSet}: A is in the set.')
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            List index 1 is abc.<br>
+                            Tuple index 2 is 50.<br>
+                            Dictionary: Answer is 42.<br>
+                            True: A is in the set.
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="sect">
+                To add values to a container, check examples below because every container is different.<br>
+                Refrain from adding values to tuples, because they are immutable.<br>
+                Just use any other container instead.
+                <hr>
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            aList=[True,"abc",[1,2,3]]<br>
+                            aTuple=(False,534.2,50)<br>
+                            aDict={'0':'Yes','Answer':42}<br>
+                            aSet={'A','B','C'}<br>
+                            aList.append(4.2)<br>
+                            aTuple=aTuple+(20,)<br>
+                            aDict['Add']='Sub'<br>
+                            aSet.add('D')<br>
+                            print(f'{aList} is a list.')<br>
+                            print(f'{aTuple} is a tuple.')<br>
+                            print(f'{aDict} is a dictionary.')<br>
+                            print(f'{aSet} is a set.')
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            [True, 'abc', [1, 2, 3], 4.2] is a list.<br>
+                            (False, 534.2, 50, 20) is a tuple.<br>
+                            {'0': 'Yes', 'Answer': 42, 'Add': 'Sub'} is a dictionary.<br>
+                            {'D', 'B', 'C', 'A'} is a set.
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="sect">
+                To remove values to a container, check examples below because every container is different.<br>
+                Refrain from adding values to tuples, because they are immutable.<br>
+                Just use any other container instead.
+                <hr>
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            aList=[True,"abc",[1,2,3],4.2]<br>
+                            aDict={'0':'Yes','Answer':42,'Add':'Sub'}<br>
+                            aSet={'A','B','C','D'}<br>
+                            aList.remove(True)<br>
+                            del aDict['Answer']<br>
+                            aSet.remove('B')<br>
+                            print(f'{aList} is a list.')<br>
+                            print(f'{aDict} is a dictionary.')<br>
+                            print(f'{aSet} is a set.')
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            ["abc", [1, 2, 3],4.2] is a list.<br>
+                            {'0': 'Yes', 'Add': 'Sub'} is a dictionary.<br>
+                            {'C', 'A', 'D'} is a set.
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

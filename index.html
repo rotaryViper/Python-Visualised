@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    First created: 8/6/2022
+    Last updated: 27/6/2022
+
+    I wanted to create this to make python easier to understand.
+    By Brandon :)
+-->
+    <head>
+        <title>Python Visualised - A CPython crash course</title>
+        <!--An attempt at SEO optimisations-->
+        <meta name="description" content="A cute & quirky crash course of CPython.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Python Visualised">
+        <meta property="og:title" content="Python Visualised">
+        <meta property="og:description" content="A cute & quirky crash course of CPython.">
+        <meta property="og:image" content="pythonlogo.png">
+        <meta property="og:url" content="">
+
+        <!--Website settings-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="pythonlogo.png">
+        
+        <!--Preload fonts first-->
+        <link
+            rel="preload"
+            as="font"
+            href="https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2"
+            type="font/woff2"
+            crossorigin="anonymous"
+        >
+        <link
+            rel="preload"
+            as="font"
+            href="https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2"
+            type="font/woff2"
+            crossorigin="anonymous"
+        >
+
+        <!--
+        https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2
+        https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2
+        https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans
+
+        target="_blank" rel="noopener noreferrer" this line is used to safely open links in new tabs
+        -->
+
+        <!--Then load font css file-->
+        <link rel="preload" as="style" href="constant.css">
+        <link rel="stylesheet" href="constant.css">
+
+        <!--Then load main css file-->
+        <link rel="preload" as="style" href="index.css">
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+        <!--Title-->
+        <div class="title">
+            Python Visualised
+        </div>
+
+        <!--Introduction-->
+        <div class="subtitle">
+            A mini python crash course
+        </div>
+
+        <!--Credits-->
+        <a class="credit" href="https://github.com/rotaryViper" target="_blank" rel="noopener noreferrer">
+            By Rotary Viper
+        </a>
+
+        <hr>
+        <!--Every section
+        Every section slides up to reveal it's subsections
+        -->
+        <span class="flexBox">
+            <a class="sect" href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+                <img
+                    src=pythonlogo.png
+                    alt="Python Logo"
+                    decoding=async
+                    loading=lazy
+                    class="pythonlogo"
+                >
+            </a>
+            <a class="sect" href="tips&tricks/main.html">
+                <c>Tips & Tricks</c>
+            </a>
+            <a class="sect" href="dataTypes/main.html">
+                <c>Data Types</c>
+            </a>
+            <a class="sect" href="containers/main.html">
+                <c>Containers</c>
+            </a>
+            <a class="sect" href="indexingSlicing/main.html">
+                <c>Indexing & Slicing</c>
+            </a>
+            <a class="sect" href="loops/main.html">
+                <c>Loops</c>
+            </a>
+            <a class="sect" href="functions/main.html">
+                <c>Functions</c>
+            </a>
+            <a class="sect" href="https://www.python.org/">
+                <c>Libraries & Files</c>
+            </a>
+            <a class="sect" href="https://www.python.org/">
+                <c>Things to do</c>
+            </a>
+        </span>
+    </body>
+</html>
