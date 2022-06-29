@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Visualised - Indexing & Slicing</title>
+
+        <!--Website settings-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="../pythonlogo.png">
+
+        <link rel="stylesheet" href="../constant.css">
+
+        <!--Then load main css file-->
+        <link rel="preload" as="style" href="main.css">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <!--Title-->
+        <a class="title" href="https://xkcd.com/163/" target="_blank" rel="noopener noreferrer">
+            Indexing & Slicing
+        </a>
+
+        <!--Introduction-->
+        <div class="subtitle">
+            Introduction in how to count in python
+        </div>
+        
+        <!--Credits-->
+        <a class="credit" href="https://github.com/rotaryViper" target="_blank" rel="noopener noreferrer">
+            By Rotary Viper
+        </a>
+        
+        <!--Home-->
+        <a class="home" href="../index.html">
+            <img
+                src=../home.svg
+                alt="Home"
+                decoding=async
+                loading=lazy
+                class="home"
+            >
+        </a>
+        
+        <hr>
+
+        <div class="text sect">
+            In python, strings, lists and tuples may use indexing and slicing.
+            <hr>
+            Indexing is splitting a piece of data into it's individual components. Then giving each component a number.<br>
+            Note: Python begins indexing from 0.
+            <div class="flexBox">
+                <div class="dataType">
+                    String = 'R_VIPER'
+                    <hr>
+                    <code>
+                    'R _ V I P E R'<br>
+                    |0 1 2 3 4 5 6|<br>
+                    </code>
+                    String[1] = '_'<br>
+                    String[5] = 'E'
+                </div>
+                <div class="dataType">
+                    List/Tuple (Both same)<br>
+                    aList = ['A', 8,'c','^',')']
+                    <hr>
+                    <code>
+                    'A', 8 ,'c','^',')'<br>
+                    |0 , 1 , 2 , 3 , 4|<br>
+                    </code>
+                    aList[0] = 'A'<br>
+                    aList[4] = ')'<br>
+                </div>
+            </div>
+            <!--Section for showing examples-->
+            <div class="flexBox">
+                <div class="leftAlign">
+                    If you ran the code:<br>
+                    <code>
+                        aString = 'Rotary Viper'<br>
+                        aList = ['A',8,'c','^',')']<br>
+                        print(aString[0])<br>
+                        print(aString[4])<br>
+                        print(aString[8])<br>
+                        print(aList[1])<br>
+                        print(aList[3])
+                    </code>
+                </div>
+
+                <div class="leftAlign">
+                    Python would output:<br>
+                    <code>
+                        R<br>
+                        r<br>
+                        i<br>
+                        8<br>
+                        ^<br>
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <div class="text sect">
+            Slicing is how you get the value of multiple indexes at the same time, the short way.<br>
+            The syntax of slicing is similar to a superset of indexing syntax.
+            <hr>
+            [Start:End:Step], when only Start or End have to be present.<br>
+            Start default value is 0, End default value is len(subscriptable), Step default value is 1<br>
+            Note: You can count backwards from the end of the subscriptable value by using negative numbers<br>
+            <div class="flexBox">
+                <div class="leftAlign">
+                    If you ran the code:<br>
+                    <code>
+                        aString = 'Rotary Viper'<br>
+                        print(aString[:1])<br>
+                        print(aString[1])<br>
+                        print(aString[:-1])<br>
+                        print(aString[::2])<br>
+                        print(aString[-1:1:-3])
+                    </code>
+                </div>
+
+                <div class="leftAlign">
+                    Python would output:<br>
+                    <code>
+                        R<br>
+                        o<br>
+                        Rotary Vipe<br>
+                        Rtr ie<br>
+                        riyt<br>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

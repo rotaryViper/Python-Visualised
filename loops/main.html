@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Visualised - Loops</title>
+
+        <!--Website settings-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="../pythonlogo.png">
+
+        <link rel="stylesheet" href="../constant.css">
+
+        <!--Then load main css file-->
+        <link rel="preload" as="style" href="main.css">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <!--Title-->
+        <a class="title" href="https://xkcd.com/1579/" target="_blank" rel="noopener noreferrer">
+            Loops
+        </a>
+
+        <!--Introduction-->
+        <div class="subtitle">
+            Introduction in repeating code
+        </div>
+        
+        <!--Credits-->
+        <a class="credit" href="https://github.com/rotaryViper" target="_blank" rel="noopener noreferrer">
+            By Rotary Viper
+        </a>
+        
+        <!--Home-->
+        <a class="home" href="../index.html">
+            <img
+                src=../home.svg
+                alt="Home"
+                decoding=async
+                loading=lazy
+                class="home"
+            >
+        </a>
+        
+        <hr>
+
+        <!--Content-->
+        <div>
+            <div class="text sect">
+                Loops can be used to repeat lines of code over and over again.<br>
+                In python, there are two types of loops. While Loops & Fore Loops.
+                <hr>
+                <div class="flexBox">
+                    <div class="dataType">
+                        For loop
+                        <hr>
+                        End condition:<br>
+                        When all subscriptable values are iterated over.
+                    </div>
+                    <div class="dataType">
+                        While loop
+                        <hr>
+                        End condition:<br>
+                        When set end condition is met when loop finishes.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" text sect">
+                In for loops:
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            print(tuple(range(5)))<br>
+                            for i in range(5):<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(i*2)
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            (0, 1, 2, 3, 4)<br>
+                            0<br>
+                            2<br>
+                            4<br>
+                            6<br>
+                            8<br>
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text sect">
+                In while loops:
+                <div class="flexBox">
+                    <div class="leftAlign">
+                        If you ran the code:<br>
+                        <code>
+                            n1, n2, count = 0, 1, 0<br>
+                            totalCount = int(input('Num fib numbers: '))<br>
+                            while count != totalCount:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(n1)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;newn2 = n1 + n2<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;n1 = n2<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;n2 = newn2<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;count += 1
+                        </code>
+                    </div>
+
+                    <div class="leftAlign">
+                        Python would output:<br>
+                        <code>
+                            Num fib numbers: 7<br>
+                            0<br>
+                            1<br>
+                            1<br>
+                            2<br>
+                            3<br>
+                            5<br>
+                            8
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    font-size: calc(1.5*(0.5rem + 1vw));
+}
+
+.dataType{
+    border-radius: calc(2*(0.5rem + 1vw));
+    background-color: lightsteelblue;
+    color: black;
+    padding: calc(0.5*(0.5rem + 1vw));
+    font-size: calc(1.5*(0.5rem + 1vw));
+    width: calc(16*(0.5rem + 1vw));
+    margin: calc(0.2rem + 1vw);
+    transition: all .5s ease-in-out;
+}
+
